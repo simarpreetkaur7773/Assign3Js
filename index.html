@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Pizza Shop</h1>
+    </header>
+    <main>
+        <form id="pizzaOrderForm">
+            <fieldset>
+                <legend>Pizza Order</legend>
+                <label for="size">Size:</label>
+                <select id="size" name="size">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+                <br>
+                <label>Toppings:</label>
+                <div>
+                    <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                    <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <br>
+                <input type="submit" value="Order">
+            </fieldset>
+        </form>
+        <p id="studentInfo"></p>
+        <div id="pizzaDescription"></div>
+    </main>
+    <footer>
+        <p>© 2023 Pizza Shop</p>
+    </footer>
+</body>
+</html>
